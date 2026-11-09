@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html><html lang='de'><head><meta charset='utf-8'><title>Berechtigungsbericht Light lab.test</title><style>body{font-family:Segoe UI,Arial,sans-serif;color:#2b2f36;margin:0;background:#f4f6fa}
+.seite{max-width:1100px;margin:0 auto;padding:28px 24px 60px}
+h1{color:#1f5fae;margin:0 0 4px;font-size:28px} h2{color:#1f5fae;font-size:19px;margin:34px 0 10px;border-bottom:2px solid #d0d5dd;padding-bottom:6px}
+.meta{color:#6b7280;font-size:13px;margin-bottom:22px}
+.kacheln{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0}
+.kachel{flex:1;min-width:150px;background:#fff;border-radius:10px;padding:14px 18px;border-left:8px solid #999;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.kachel b{display:block;font-size:30px} .kachel span{font-size:13px;color:#6b7280}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px;margin:8px 0 4px}
+th{background:#1f5fae;color:#fff;text-align:left;padding:7px 9px;font-weight:600} td{padding:6px 9px;border-bottom:1px solid #e5e7eb;vertical-align:top;overflow-wrap:break-word}
+tr:nth-child(even) td{background:#f9fafb}
+.marke{display:inline-block;min-width:58px;text-align:center;padding:2px 9px;border-radius:11px;color:#fff;font-size:12px;font-weight:600}
+.m-Hoch{background:#d92d20}.m-Mittel{background:#f79009}.m-Niedrig{background:#ca8a04}.m-OK{background:#12b76a}.m-Info{background:#1f5fae}
+.befund{background:#fff;border-radius:10px;padding:16px 20px;margin:14px 0;border-left:8px solid #999;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.befund h3{margin:0 0 6px;font-size:16px} .befund p{margin:5px 0;font-size:14px;line-height:1.45} .befund .emp{color:#14532d}
+.Hoch{border-color:#d92d20}.Mittel{border-color:#f79009}.Niedrig{border-color:#eab308}.OK{border-color:#12b76a}.Info{border-color:#1f5fae}
+.klein{color:#6b7280;font-size:12px} a{color:#1f5fae;text-decoration:none}
+pre{background:#fff;border:1px solid #d0d5dd;border-radius:8px;padding:12px 14px;font-size:12px;white-space:pre-wrap;word-break:break-word}
+.fuss{margin-top:40px;color:#6b7280;font-size:12px;border-top:1px solid #d0d5dd;padding-top:12px}
+@media print{body{background:#fff}.befund,.kachel{box-shadow:none;border:1px solid #d0d5dd;border-left-width:8px;break-inside:avoid}}</style></head><body><div class='seite'><h1>Berechtigungsbericht Light</h1><div class='meta'>Dom&#228;ne <b>lab.test</b> · erstellt am 09.11.2026 19:43 von LAB\Administrator auf LABDC01</div><div class='kacheln'><div class='kachel Hoch'><b>1</b><span>Befunde mit hoher Priorität</span></div><div class='kachel Mittel'><b>0</b><span>mit mittlerer Priorität</span></div><div class='kachel Niedrig'><b>0</b><span>mit niedriger Priorität</span></div><div class='kachel Info'><b>0</b><span>Hinweise und nicht geprüft</span></div><div class='kachel OK'><b>3</b><span>Prüfpunkte ohne Befund</span></div></div><h2>Umgebung</h2><table><tr><th>Eigenschaft</th><th>Wert</th></tr><tr><td>Dom&#228;ne (NetBIOS)</td><td>lab.test (LAB)</td></tr><tr><td>Gruppen (mit Mitgliedern / gesamt)</td><td>29 / 89</td></tr><tr><td>Ausgewertete Mitgliedschaften</td><td>91</td></tr><tr><td>Gepr&#252;fte Objekte</td><td>Dom&#228;nenobjekt, 10 Organisationseinheiten, 2 Standardcontainer, 5 Gruppenrichtlinien, AdminSDHolder</td></tr><tr><td>Delegierte Rechte (ohne Standard)</td><td>0</td></tr><tr><td>Schwellen dieses Berichts</td><td>Konten in mehr als 60 Gruppen</td></tr><tr><td>Hinweis</td><td>Mitglieder &#252;ber die prim&#228;re Gruppe (z. B. Dom&#228;nen-Benutzer) sind nicht einzeln aufgef&#252;hrt.</td></tr></table><h2>Übersicht der Prüfpunkte</h2><table><tr><th>Nr.</th><th>Bereich</th><th>Prüfpunkt</th><th>Treffer</th><th>Bewertung</th></tr><tr><td>B1</td><td>Dom&#228;ne</td><td><a href='#B1'>Replikationsrechte (DCSync) au&#223;erhalb der Standardkonten</a></td><td>2</td><td><span class='marke m-Hoch'>Hoch</span></td></tr><tr><td>B4</td><td>Delegierung</td><td><a href='#B4'>Schreibrechte f&#252;r Jeder, Authentifizierte Benutzer oder Dom&#228;nen-Benutzer</a></td><td>0</td><td><span class='marke m-OK'>OK</span></td></tr><tr><td>B7</td><td>Delegierung</td><td><a href='#B7'>Rechte f&#252;r gel&#246;schte Konten (verwaiste SIDs)</a></td><td>0</td><td><span class='marke m-OK'>OK</span></td></tr><tr><td>B11</td><td>Gruppen</td><td><a href='#B11'>Gruppen, die sich im Kreis enthalten</a></td><td>0</td><td><span class='marke m-OK'>OK</span></td></tr></table><h2>Mitglieder der privilegierten Gruppen (auch verschachtelt)</h2><table>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tr><th>Gruppe</th><th>Mitglied</th><th>Art</th><th>Weg</th></tr>
+<tr><td>Administratoren</td><td>adm.extern</td><td>Benutzer</td><td>&#252;ber Dom&#228;nen-Admins</td></tr>
+<tr><td>Administratoren</td><td>adm.hartmann</td><td>Benutzer</td><td>&#252;ber Dom&#228;nen-Admins</td></tr>
+<tr><td>Administratoren</td><td>adm.lange</td><td>Benutzer</td><td>&#252;ber Dom&#228;nen-Admins</td></tr>
+<tr><td>Administratoren</td><td>Administrator</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Administratoren</td><td>b.schulz</td><td>Benutzer</td><td>&#252;ber Dom&#228;nen-Admins</td></tr>
+<tr><td>Administratoren</td><td>l.werner</td><td>Benutzer</td><td>&#252;ber Dom&#228;nen-Admins &gt; ROLLE-IT-Helfer</td></tr>
+<tr><td>Administratoren</td><td>s.winter</td><td>Benutzer</td><td>&#252;ber Dom&#228;nen-Admins</td></tr>
+<tr><td>Administratoren</td><td>svc.backup</td><td>Benutzer</td><td>&#252;ber Dom&#228;nen-Admins</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>adm.extern</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>adm.hartmann</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>adm.lange</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>Administrator</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>b.schulz</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>l.werner</td><td>Benutzer</td><td>&#252;ber ROLLE-IT-Helfer</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>s.winter</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>svc.backup</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Organisations-Admins</td><td>adm.hartmann</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Organisations-Admins</td><td>Administrator</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Richtlinien-Ersteller-Besitzer</td><td>Administrator</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Schema-Admins</td><td>adm.lange</td><td>Benutzer</td><td>direkt</td></tr>
+<tr><td>Schema-Admins</td><td>Administrator</td><td>Benutzer</td><td>direkt</td></tr>
+</table><h2>Gruppen im &#220;berblick</h2><table>
+<colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<tr><th>Gruppe</th><th>Bereich</th><th>Direkte Mitglieder</th><th>Benutzer und Computer (auch verschachtelt)</th><th>Enthaltene Gruppen</th><th>Ort</th></tr>
+<tr><td>$V41000-DRDH0H9JF965</td><td>Global</td><td>1</td><td>1</td><td>0</td><td>CN=Microsoft Exchange System Objects</td></tr>
+<tr><td>Abgelehnte RODC-Kennwortreplikationsgruppe</td><td>DomainLocal</td><td>8</td><td>9</td><td>8</td><td>CN=Users</td></tr>
+<tr><td>ABT-Buchhaltung</td><td>Global</td><td>3</td><td>3</td><td>0</td><td>OU=Gruppen,OU=Muster GmbH</td></tr>
+<tr><td>ABT-Empfang</td><td>Global</td><td>2</td><td>2</td><td>0</td><td>OU=Gruppen,OU=Muster GmbH</td></tr>
+<tr><td>ABT-Geschaeftsleitung</td><td>Global</td><td>2</td><td>2</td><td>0</td><td>OU=Gruppen,OU=Muster GmbH</td></tr>
+<tr><td>ABT-Technik</td><td>Global</td><td>5</td><td>5</td><td>0</td><td>OU=Gruppen,OU=Muster GmbH</td></tr>
+<tr><td>ABT-Vertrieb</td><td>Global</td><td>6</td><td>6</td><td>0</td><td>OU=Gruppen,OU=Muster GmbH</td></tr>
+<tr><td>Administratoren</td><td>DomainLocal</td><td>3</td><td>8</td><td>3</td><td>CN=Builtin</td></tr>
+<tr><td>Alle-Mitarbeiter-11142876955</td><td>Universal</td><td>1</td><td>1</td><td>0</td><td>OU=Exchange-Test</td></tr>
+<tr><td>Benutzer</td><td>DomainLocal</td><td>3</td><td>2</td><td>1</td><td>CN=Builtin</td></tr>
+<tr><td>Dom&#228;nen-Admins</td><td>Global</td><td>8</td><td>8</td><td>1</td><td>CN=Users</td></tr>
+<tr><td>Exchange Servers</td><td>Universal</td><td>2</td><td>1</td><td>1</td><td>OU=Microsoft Exchange Security Groups</td></tr>
+<tr><td>Exchange Trusted Subsystem</td><td>Universal</td><td>1</td><td>1</td><td>0</td><td>OU=Microsoft Exchange Security Groups</td></tr>
+<tr><td>Exchange Windows Permissions1</td><td>Universal</td><td>1</td><td>1</td><td>1</td><td>OU=Microsoft Exchange Security Groups</td></tr>
+<tr><td>G&#228;ste</td><td>DomainLocal</td><td>2</td><td>1</td><td>1</td><td>CN=Builtin</td></tr>
+<tr><td>G-Buchhaltung</td><td>Global</td><td>1</td><td>1</td><td>0</td><td>OU=Dateiserver</td></tr>
+<tr><td>G-Geschaeftsleitung</td><td>Global</td><td>1</td><td>1</td><td>0</td><td>OU=Dateiserver</td></tr>
+<tr><td>G-Vertrieb</td><td>Global</td><td>1</td><td>1</td><td>0</td><td>OU=Dateiserver</td></tr>
+<tr><td>IIS_IUSRS</td><td>DomainLocal</td><td>1</td><td>1</td><td>0</td><td>CN=Builtin</td></tr>
+<tr><td>Managed Availability Servers</td><td>Universal</td><td>2</td><td>1</td><td>2</td><td>OU=Microsoft Exchange Security Groups</td></tr>
+<tr><td>Organisations-Admins</td><td>Universal</td><td>2</td><td>2</td><td>0</td><td>CN=Users</td></tr>
+<tr><td>Organization Management</td><td>Universal</td><td>1</td><td>1</td><td>0</td><td>OU=Microsoft Exchange Security Groups</td></tr>
+<tr><td>Pr&#228;-Windows 2000 kompatibler Zugriff</td><td>DomainLocal</td><td>1</td><td>1</td><td>0</td><td>CN=Builtin</td></tr>
+<tr><td>Richtlinien-Ersteller-Besitzer</td><td>Global</td><td>1</td><td>1</td><td>0</td><td>CN=Users</td></tr>
+<tr><td>ROLLE-Fernzugriff</td><td>Global</td><td>4</td><td>4</td><td>0</td><td>OU=Gruppen,OU=Muster GmbH</td></tr>
+<tr><td>ROLLE-IT-Helfer</td><td>Global</td><td>1</td><td>1</td><td>0</td><td>OU=Gruppen,OU=Muster GmbH</td></tr>
+<tr><td>Schema-Admins</td><td>Universal</td><td>2</td><td>2</td><td>0</td><td>CN=Users</td></tr>
+<tr><td>Vertrieb-1-1300147922</td><td>Universal</td><td>1</td><td>1</td><td>0</td><td>OU=Exchange-Test</td></tr>
+<tr><td>Windows-Autorisierungszugriffsgruppe</td><td>DomainLocal</td><td>2</td><td>2</td><td>2</td><td>CN=Builtin</td></tr>
+</table><h2>Befunde</h2><div class='befund Hoch' id='B1'><h3><span class='marke m-Hoch'>Hoch</span> B1 · Replikationsrechte (DCSync) au&#223;erhalb der Standardkonten <span class='klein'>(2 Treffer)</span></h3><p>Wer am Dom&#228;nenobjekt &quot;Alle Verzeichnis&#228;nderungen replizieren&quot; darf, kann die Kennwort-Hashwerte aller Konten abrufen - auch die der Administratoren (DCSync). Im Auslieferungszustand haben das nur Dom&#228;nencontroller und Administratoren. Das Synchronisationskonto von Microsoft Entra Connect (MSOL_...) braucht dieses Recht und erscheint hier zu Recht.</p><p class='emp'><b>Empfehlung:</b> Jeden Eintrag pr&#252;fen. Unbekannte Eintr&#228;ge sofort entfernen und als Sicherheitsvorfall behandeln; das Konto von Entra Connect wie ein Administratorkonto sch&#252;tzen.</p><table>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<tr><th>Objekt</th><th>Konto</th><th>Art</th><th>Rechte</th><th>Gilt für</th></tr>
+<tr><td>Dom&#228;ne lab.test</td><td>BT-Scoped</td><td>Gruppe</td><td>Vollzugriff (Zusatz: ObjectType bf967aba-0de6-11d0-afa6-00aa003049e2)</td><td>dieses Objekt und alles darunter</td></tr>
+<tr><td>Dom&#228;ne lab.test</td><td>Exchange Windows Permissions</td><td>Gruppe</td><td>Alle Verzeichnis&#228;nderungen replizieren (DCSync)</td><td>nur dieses Objekt</td></tr>
+</table></div><h2>Ohne Befund</h2><table><tr><th>Nr.</th><th>Prüfpunkt</th></tr><tr id='B4'><td>B4</td><td>Schreibrechte f&#252;r Jeder, Authentifizierte Benutzer oder Dom&#228;nen-Benutzer</td></tr><tr id='B7'><td>B7</td><td>Rechte f&#252;r gel&#246;schte Konten (verwaiste SIDs)</td></tr><tr id='B11'><td>B11</td><td>Gruppen, die sich im Kreis enthalten</td></tr></table><div class='fuss'>Berechtigungsbericht Light Version 1.0 · IT Admin Tools by MM · Das Skript hat ausschließlich gelesen und nichts verändert. Light-Version mit 4 von 14 Pr&#252;fpunkten der Vollversion (https://mueller86.gumroad.com/l/xyjmdr). Ausgewertet wurden Gruppenmitgliedschaften und Berechtigungen im Active Directory, nicht die Berechtigungen auf Dateifreigaben. Der Bericht zeigt Auff&#228;lligkeiten anhand fester Regeln; er ersetzt keine Sicherheitspr&#252;fung und erhebt keinen Anspruch auf Vollst&#228;ndigkeit. Er enth&#228;lt Konto- und Gruppennamen - bitte vertraulich behandeln.</div></div></body></html>
