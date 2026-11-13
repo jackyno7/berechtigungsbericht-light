@@ -346,7 +346,10 @@ function RechteText($ace) {
         if ($ot -eq $leer) { $t += 'Alle erweiterten Rechte (u. a. Kennwort zurücksetzen)' }
         elseif ($ot -in $gefaehrlich) { $t += GuidText $ot '' }
     }
-    if (($r -band $R::Self) -and -not ($r -band $R::WriteProperty)) { $t += 'Bestätigtes Schreiben: ' + (GuidText $ot 'alle') }
+    if (($r -band $R::Self) -and -not ($r -band $R::WriteProperty)) {
+        # Self-Membership (bf9679c0-...) erlaubt, sich selbst in die Gruppe einzutragen: nie als harmloses bestätigtes Schreiben behandeln
+        if ($ot -eq 'bf9679c0-0de6-11d0-a285-00aa003049e2') { $t += 'Selbst als Mitglied eintragen (Self-Membership)' } elseif ($ot -eq $leer) { $t += 'Alle bestätigten Schreibrechte (auch Selbst als Mitglied eintragen)' } else { $t += 'Bestätigtes Schreiben: ' + (GuidText $ot 'alle') }
+    }
     , $t
 }
 function GiltFuer($ace) {
