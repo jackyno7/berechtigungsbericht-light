@@ -21,7 +21,7 @@
 
     Deutsch:
     Das Skript arbeitet ausschließlich LESEND. Es ändert keine Berechtigungen, Gruppen oder Objekte und
-    überträgt keine Daten. Es schreibt genau eine HTML-Datei (und auf Wunsch CSV-Dateien) in den
+    sendet keine Daten an Dritte oder ins Internet. Es schreibt genau eine HTML-Datei (und auf Wunsch CSV-Dateien) in den
     angegebenen Ausgabeordner.
 
     Voraussetzungen: Windows PowerShell 5.1, das Modul "ActiveDirectory" und ein Domänenkonto mit Leserechten.
