@@ -11,7 +11,7 @@
 
 .DESCRIPTION
     The script operates exclusively in READ-ONLY mode. It does not change permissions, groups, or objects and
-    does not transfer data. It writes exactly one HTML file (and, if requested, CSV files) to the
+    sends no data to third parties or the internet. It writes exactly one HTML file (and, if requested, CSV files) to the
     specified output folder.
 
     Prerequisites: Windows PowerShell 5.1, the "ActiveDirectory" module, and a domain account with read permissions.
